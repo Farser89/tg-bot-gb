@@ -1760,7 +1760,7 @@ async def valid(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         return CHOICE
 
 
-async def cancel(update: Update) -> int:
+async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """
     Функция, которая завершает беседу с Ботом
 
@@ -1815,7 +1815,7 @@ async def check_schedule(application: Application) -> None:
                                             callback=callback, time=row['time'], days=eval(row['days']), user_id=row['user_id'], chat_id=row['chat_id'])
 
 
-async def restart(update: Update) -> int:
+async def restart(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """
     Функция для рестарта бота любым человеком
 
