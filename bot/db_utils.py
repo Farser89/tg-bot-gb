@@ -3,7 +3,7 @@ import sqlalchemy
 import pandas as pd
 import re
 
-DATABASE_URL = "postgresql+psycopg2://user:qwerty12345@localhost/main_db"
+DATABASE_URL = "postgresql+psycopg2://user:qwerty12345@postgres/main_db"
 engine = create_engine(DATABASE_URL)
 
 
